@@ -1,15 +1,15 @@
 import { Avatar, Box, Button, Flex, Image, Link, ListItem, Table, TableCaption, Tbody, Td, Text, Tfoot, Th, Thead, Tr } from "@chakra-ui/react";
 import Nav from "./components/navbar/NavBar";
 import { FcApproval,FcCheckmark } from "react-icons/fc";
-import { FaStar } from "react-icons/fa";
+import { FaStar,FaStarHalfAlt,FaRegStar } from "react-icons/fa";
 
 function Card({children}){
   return(
     <Box boxShadow='dark-lg' 
     ml={[0, 0, '10vw']} 
     mr={[0, 0, '10vw']} 
-    mt={[0, 0, '1vw']} 
-    mb={[0, 0, '1vw']}
+    mt={['4vw', '2vw', '1vw']} 
+    mb={['4vw', '2vw', '1vw']}
     w={[490, 400, 'auto']}
     p='6' 
     rounded='md' 
@@ -58,9 +58,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>1º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/webpeak.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -70,7 +73,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -81,17 +84,21 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>2º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Semrush</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='2vw' w='150px' src="/images/semrush.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -101,7 +108,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -112,7 +119,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://pt.semrush.com/projects/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -120,9 +127,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>3º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Ahrefs</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='-1vw' p='10px' w='150px' src="/images/ahrefs2.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -132,7 +142,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -143,7 +153,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -151,9 +161,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>4º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Serpstat</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='6vw' mw='150px' w='150px' p='1px' src="/images/serpstat.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -163,7 +176,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -174,7 +187,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -182,9 +195,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>5º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Rankingcoach</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='5px' src="/images/rankingcoach2.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -194,7 +210,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -205,7 +221,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -213,9 +229,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>6º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Se ranking</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='0.8vw' w='150px' src="/images/se ranking2.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -225,7 +244,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -236,7 +255,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -244,9 +263,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>7º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Moz</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/moz.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -256,7 +278,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -267,7 +289,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -275,9 +297,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>8º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Ubersugest</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' src="/images/ubersugest.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -287,7 +312,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -298,7 +323,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -306,9 +331,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>9º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/logocor.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -318,7 +346,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -329,7 +357,7 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
@@ -337,9 +365,12 @@ export default function Home(){
     <Card>
       <Flex justifyContent={'space-between'}>
         <Text fontSize='20px' fontWeight={'bold'}>10º</Text>
-        <Box bg='white' h={['20vw','20vw', 0]}>
-          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        <Flex flexDirection={'column'} top='0'>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Box bg='white' h={['20vw','20vw', '6vw']}>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/logocor.webp"/>
         </Box>
+        </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
@@ -349,7 +380,7 @@ export default function Home(){
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text >Outstanding</Text>
+          <Text>Outstanding</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -360,11 +391,12 @@ export default function Home(){
           <Link color='#05071c'>Read Review »</Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
           <Link textAlign='center' color='#05071c'>Start Now</Link>
         </Flex>
       </Flex>
     </Card>
+    
 
     {/* <Box display={'flex'} justifyContent={'center'} mt='5vw' m='2vw' flexDirection={'column'}> */}
       {/* <Table size='lg'border='1px' w='500' h='800' display={'block'} overflow='scroll' m='2vw'>
