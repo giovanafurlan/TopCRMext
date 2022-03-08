@@ -1,6 +1,23 @@
-import { Avatar, Box, Flex, Image, ListItem, Table, TableCaption, Tbody, Td, Text, Tfoot, Th, Thead, Tr } from "@chakra-ui/react";
+import { Avatar, Box, Button, Flex, Image, Link, ListItem, Table, TableCaption, Tbody, Td, Text, Tfoot, Th, Thead, Tr } from "@chakra-ui/react";
 import Nav from "./components/navbar/NavBar";
-import { FcApproval } from "react-icons/fc";
+import { FcApproval,FcCheckmark } from "react-icons/fc";
+import { FaStar } from "react-icons/fa";
+
+function Card({children}){
+  return(
+    <Box boxShadow='dark-lg' 
+    ml={[0, 0, '10vw']} 
+    mr={[0, 0, '10vw']} 
+    mt={[0, 0, '1vw']} 
+    mb={[0, 0, '1vw']}
+    w={[490, 400, 'auto']}
+    p='6' 
+    rounded='md' 
+    bg='gray.200'>
+    {children}
+    </Box>
+  );
+}
 
 export default function Home(){
 
@@ -18,26 +35,339 @@ export default function Home(){
     <>
     <Nav/>
     <Box>
-      <Flex height='800px' 
+      <Flex height='600px' 
+       w={[500, 500, 'auto']}
       backgroundColor={'#05071c'} 
       justifyContent='space-around'>
-        <Flex width='600px' 
-        ml='200px' 
+        <Flex w={[500, 500, 600]} 
+        ml='20vw' 
         mt='100px' 
         flexDirection={'column'} 
         color={'white'} >
-          <Text fontSize='80px' 
+          <Text fontSize={{ base: '40px', md: '60px', lg: '80px' }} 
           fontWeight='bolder' 
           textTransform='uppercase' 
           lineHeight='100%'>Os 10 melhores softwares de SEO</Text>
           <Text fontSize='20px' 
           mt='2vw'>Os 10 melhores softwares de SEO</Text>
         </Flex>
-        <Image m='100px' src='https://top10seosoftware.com/wp-content/themes/top10seo/assets/img/winner-bg.svg'/>
+        {/* <Image w='30vw' mr='10vw' ml='10vw' src='https://top10seosoftware.com/wp-content/themes/top10seo/assets/img/winner-bg.svg'/> */}
       </Flex>
     </Box>
+
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>1º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>2º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>3º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>4º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>5º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>6º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>7º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>8º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>9º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+    <Card>
+      <Flex justifyContent={'space-between'}>
+        <Text fontSize='20px' fontWeight={'bold'}>10º</Text>
+        <Box bg='white' h={['20vw','20vw', 0]}>
+          <Image h='auto' mw='150px' w='150px' p='15px' src={'https://global-uploads.webflow.com/5a4661af7b791a00019cfaee/5b47ac14a098142df65b3219_webpeak%20(1).png'}/>
+        </Box>
+        <Flex flexDirection={'column'}>
+          <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
+          <Link fontWeight='600'>**14-day free trial**</Link></Link>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+        </Flex>
+        <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
+          <Text >Outstanding</Text>
+          <Flex pt='5px'pb='5px' ml='10px'>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+          </Flex>
+          <Link color='#05071c'>Read Review »</Link>
+        </Flex>
+        <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
+          <Button mb='20px' color='white' bg="#05071c">Visit Site</Button>
+          <Link textAlign='center' color='#05071c'>Start Now</Link>
+        </Flex>
+      </Flex>
+    </Card>
+
     {/* <Box display={'flex'} justifyContent={'center'} mt='5vw' m='2vw' flexDirection={'column'}> */}
-      <Table size='lg'border='1px' w='500' h='800' display={'block'} overflow='scroll' m='2vw'>
+      {/* <Table size='lg'border='1px' w='500' h='800' display={'block'} overflow='scroll' m='2vw'>
         <Thead backgroundColor={'#05071c'}>
           <Tr>
             <Th color={'white'}>Nome</Th>
@@ -148,7 +478,7 @@ export default function Home(){
           <Tr>
           </Tr>
         </Tfoot>
-      </Table>
+      </Table> */}
     {/* </Box> */}
     </>
   )

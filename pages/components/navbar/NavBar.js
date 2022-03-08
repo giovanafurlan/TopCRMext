@@ -18,7 +18,6 @@ import {
 
 export default function Nav() {
   return (
-    <>
       <Box bg={'white'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box>Logo</Box>
@@ -60,6 +59,5 @@ export default function Nav() {
           </Flex>
         </Flex>
       </Box>
-    </>
   );
 }
