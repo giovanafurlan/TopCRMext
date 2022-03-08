@@ -1,6 +1,6 @@
 import { Avatar, Box, Button, Flex, Image, Link, ListItem, Table, TableCaption, Tbody, Td, Text, Tfoot, Th, Thead, Tr } from "@chakra-ui/react";
 import Nav from "./components/navbar/NavBar";
-import { FcApproval,FcCheckmark } from "react-icons/fc";
+import { FcCheckmark,FcCancel } from "react-icons/fc";
 import { FaStar,FaStarHalfAlt,FaRegStar } from "react-icons/fa";
 
 function Card({children}){
@@ -21,15 +21,135 @@ function Card({children}){
 
 export default function Home(){
 
-  const dados1 =
-    {nome: "Product 1", 
-    logo: "https://goo.gl/Wk14oo",
-    classificacao: "8.9 / 10", 
-    classificacaog2: "4.8", 
-    classificacaocapterra: "4.8",
-    valorbase: "$18.6/mês",
-    projetos: "10 - Ilimitado",
-    ranking: "yes"}
+  const primeiro = {
+    position: "1º",
+    nome: "Webpeak", 
+    logo: "/images/webpeak.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const segundo = {
+    position: "2º",
+    nome: "Semrush", 
+    logo: "/images/semrush.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const terceiro = {
+    position: "3º",
+    nome: "Ahrefs", 
+    logo: "/images/ahrefs2.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const quarto = {
+    position: "4º",
+    nome: "Serpstat", 
+    logo: "/images/serpstat.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const quinto = {
+    position: "5º",
+    nome: "RankingCoach", 
+    logo: "/images/rankingcoach2.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const sexto = {
+    position: "6º",
+    nome: "SE ranking", 
+    logo: "/images/se ranking2.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const setimo = {
+    position: "7º",
+    nome: "Moz", 
+    logo: "/images/moz.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const oitavo = {
+    position: "8º",
+    nome: "Ubersugest", 
+    logo: "/images/ubersugest.webp",
+    info1: "Over 200 ready-made templates",
+    info2: "Over 200 ready-made templates",
+    info3: "Over 200 ready-made templates",
+    score: "9.8",
+    rating: "Outstanding",
+    review: "",
+    website: ""
+  }
+
+  const nono = {
+    position: "9º",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
+    review: "",
+    website: ""
+  }
+
+  const decimo = {
+    position: "10º",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
+    review: "",
+    website: ""
+  }
 
   return(
     <>
@@ -57,23 +177,23 @@ export default function Home(){
 
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>1º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{primeiro.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{primeiro.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/webpeak.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src={primeiro.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{primeiro.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{primeiro.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{primeiro.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{primeiro.score}</Text>
+          <Text>{primeiro.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -81,34 +201,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={primeiro.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={primeiro.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
 
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>2º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{segundo.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Semrush</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{segundo.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='2vw' w='150px' src="/images/semrush.webp"/>
+          <Image h='auto' mw='150px' mt='2vw' w='150px' src={segundo.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{segundo.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{segundo.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{segundo.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{segundo.score}</Text>
+          <Text>{segundo.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -116,33 +236,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={segundo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://pt.semrush.com/projects/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={segundo.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>3º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{terceiro.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Ahrefs</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{terceiro.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='-1vw' p='10px' w='150px' src="/images/ahrefs2.webp"/>
+          <Image h='auto' mw='150px' mt='-1vw' w='150px' p='15px' src={terceiro.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{terceiro.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{terceiro.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{terceiro.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{terceiro.score}</Text>
+          <Text>{terceiro.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -150,33 +271,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={terceiro.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={terceiro.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>4º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{quarto.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Serpstat</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{quarto.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='6vw' mw='150px' w='150px' p='1px' src="/images/serpstat.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' src={quarto.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{quarto.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{quarto.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{quarto.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{quarto.score}</Text>
+          <Text>{quarto.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -184,33 +306,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={quarto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={quarto.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>5º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{quinto.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Rankingcoach</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{quinto.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' p='5px' src="/images/rankingcoach2.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='8px' src={quinto.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{quinto.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{quinto.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{quinto.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{quinto.score}</Text>
+          <Text>{quinto.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -218,33 +341,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={quinto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={quinto.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>6º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{sexto.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Se ranking</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{sexto.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='0.8vw' w='150px' src="/images/se ranking2.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' src={sexto.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{sexto.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{sexto.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{sexto.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{sexto.score}</Text>
+          <Text>{sexto.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -252,33 +376,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={sexto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={sexto.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>7º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{setimo.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Moz</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{setimo.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/moz.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src={setimo.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{primeiro.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{setimo.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{setimo.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{setimo.score}</Text>
+          <Text>{setimo.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -286,33 +411,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={setimo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={setimo.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>8º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{oitavo.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Ubersugest</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{oitavo.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' src="/images/ubersugest.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' src={oitavo.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{oitavo.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{oitavo.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{primeiro.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{oitavo.score}</Text>
+          <Text>{oitavo.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -320,33 +446,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={oitavo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={oitavo.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>9º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{nono.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{nono.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/logocor.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src={nono.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{nono.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{nono.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{nono.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{nono.score}</Text>
+          <Text>{nono.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -354,33 +481,34 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={nono.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={nono.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
+
     <Card>
       <Flex justifyContent={'space-between'}>
-        <Text fontSize='20px' fontWeight={'bold'}>10º</Text>
+        <Text fontSize='20px' fontWeight={'bold'}>{decimo.position}</Text>
         <Flex flexDirection={'column'} top='0'>
-          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>Webpeak</Text>
+          <Text mb='3px' fontSize='20px' fontWeight={'bold'}>{decimo.nome}</Text>
           <Box bg='white' h={['20vw','20vw', '6vw']}>
-          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src="/images/logocor.webp"/>
+          <Image h='auto' mw='150px' mt='1vw' w='150px' p='15px' src={decimo.logo}/>
         </Box>
         </Flex>
         <Flex flexDirection={'column'}>
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
-          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
-          <Text display={'flex'}><FcCheckmark/>Over 200 ready-made templates</Text>
+          <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{decimo.info1}</Text>
+          <Text display={'flex'}><FcCheckmark/>{decimo.info2}</Text>
+          <Text display={'flex'}><FcCheckmark/>{decimo.info3}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
-          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>9.8</Text>
-          <Text>Outstanding</Text>
+          <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{decimo.score}</Text>
+          <Text>{decimo.rating}</Text>
           <Flex pt='5px'pb='5px' ml='10px'>
             <FaStar/>
             <FaStar/>
@@ -388,15 +516,14 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
           </Flex>
-          <Link color='#05071c'>Read Review »</Link>
+          <Link target="_blank" href={decimo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
         <Flex flexDirection={'column'} p={['5px','5px', '0.5vw']} m={['5px','5px', 0]}>
-          <Link href='https://www.webpeak.com.br/' target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
-          <Link textAlign='center' color='#05071c'>Start Now</Link>
+          <Link href={decimo.website} target='_blank'><Button  mb='20px' color='white' bg="#05071c">Visit Site</Button></Link>
+          {/* <Link textAlign='center' color='#05071c'>Start Now</Link> */}
         </Flex>
       </Flex>
     </Card>
-    
 
     {/* <Box display={'flex'} justifyContent={'center'} mt='5vw' m='2vw' flexDirection={'column'}> */}
       {/* <Table size='lg'border='1px' w='500' h='800' display={'block'} overflow='scroll' m='2vw'>
