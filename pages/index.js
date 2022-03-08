@@ -23,11 +23,11 @@ export default function Home(){
 
   const primeiro = {
     position: "1º",
-    nome: "Webpeak", 
-    logo: "/images/webpeak.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
+    nome: "Zoho", 
+    logo: "/images/zoho.webp",
+    info1: "",
+    info2: "",
+    info3: "",
     score: "9.8",
     rating: "Outstanding",
     review: "",
@@ -36,91 +36,91 @@ export default function Home(){
 
   const segundo = {
     position: "2º",
-    nome: "Semrush", 
-    logo: "/images/semrush.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const terceiro = {
     position: "3º",
-    nome: "Ahrefs", 
-    logo: "/images/ahrefs2.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const quarto = {
     position: "4º",
-    nome: "Serpstat", 
-    logo: "/images/serpstat.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const quinto = {
     position: "5º",
-    nome: "RankingCoach", 
-    logo: "/images/rankingcoach2.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const sexto = {
     position: "6º",
-    nome: "SE ranking", 
-    logo: "/images/se ranking2.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const setimo = {
     position: "7º",
-    nome: "Moz", 
-    logo: "/images/moz.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
 
   const oitavo = {
     position: "8º",
-    nome: "Ubersugest", 
-    logo: "/images/ubersugest.webp",
-    info1: "Over 200 ready-made templates",
-    info2: "Over 200 ready-made templates",
-    info3: "Over 200 ready-made templates",
-    score: "9.8",
-    rating: "Outstanding",
+    nome: "", 
+    logo: "/images/",
+    info1: "",
+    info2: "",
+    info3: "",
+    score: "",
+    rating: "",
     review: "",
     website: ""
   }
@@ -167,9 +167,9 @@ export default function Home(){
           <Text fontSize={{ base: '40px', md: '60px', lg: '80px' }} 
           fontWeight='bolder' 
           textTransform='uppercase' 
-          lineHeight='100%'>Os 10 melhores softwares de SEO</Text>
+          lineHeight='100%'>Os 10 melhores CRM</Text>
           <Text fontSize='20px' 
-          mt='2vw'>Os 10 melhores softwares de SEO</Text>
+          mt='2vw'>Os 10 melhores CRM</Text>
         </Flex>
         {/* <Image w='30vw' mr='10vw' ml='10vw' src='https://top10seosoftware.com/wp-content/themes/top10seo/assets/img/winner-bg.svg'/> */}
       </Flex>
