@@ -28,6 +28,8 @@ export default function Home(){
     info1: "",
     info2: "",
     info3: "",
+    info4: "",
+    info5: "",
     score: "9.8",
     rating: "Outstanding",
     review: "",
@@ -38,11 +40,13 @@ export default function Home(){
     position: "2º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2: " ",
+    info3: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "9.4",
+    rating: "Excelente",
     review: "",
     website: ""
   }
@@ -51,11 +55,13 @@ export default function Home(){
     position: "3º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2: " ",
+    info3: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "9.1",
+    rating: "Excelente",
     review: "",
     website: ""
   }
@@ -64,11 +70,13 @@ export default function Home(){
     position: "4º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2: " ",
+    info3: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "9",
+    rating: "Excelente",
     review: "",
     website: ""
   }
@@ -77,24 +85,28 @@ export default function Home(){
     position: "5º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2: " ",
+    info3r: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "8.9",
+    rating: "Bom",
     review: "",
     website: ""
   }
 
   const sexto = {
     position: "6º",
-    nome: "", 
+    nome: " ", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2: " ",
+    info3r: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "8.4",
+    rating: "Bom",
     review: "",
     website: ""
   }
@@ -103,11 +115,13 @@ export default function Home(){
     position: "7º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2r: " ",
+    info3r: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "8.2",
+    rating: "Razoável",
     review: "",
     website: ""
   }
@@ -116,11 +130,13 @@ export default function Home(){
     position: "8º",
     nome: "", 
     logo: "/images/",
-    info1: "",
-    info2: "",
-    info3: "",
-    score: "",
-    rating: "",
+    info1: " ",
+    info2r: " ",
+    info3r: " ",
+    info4r: " ",
+    info5r: " ",
+    score: "8",
+    rating: "Razoável",
     review: "",
     website: ""
   }
@@ -151,6 +167,7 @@ export default function Home(){
     website: ""
   }
 
+
   return(
     <>
     <Nav/>
@@ -167,9 +184,9 @@ export default function Home(){
           <Text fontSize={{ base: '40px', md: '60px', lg: '80px' }} 
           fontWeight='bolder' 
           textTransform='uppercase' 
-          lineHeight='100%'>Os 10 melhores CRM</Text>
+          lineHeight='100%'>Os 10 melhores softwares de SEO</Text>
           <Text fontSize='20px' 
-          mt='2vw'>Os 10 melhores CRM</Text>
+          mt='2vw'>Os 10 melhores softwares de SEO</Text>
         </Flex>
         {/* <Image w='30vw' mr='10vw' ml='10vw' src='https://top10seosoftware.com/wp-content/themes/top10seo/assets/img/winner-bg.svg'/> */}
       </Flex>
@@ -190,6 +207,8 @@ export default function Home(){
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{primeiro.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{primeiro.info2}</Text>
           <Text display={'flex'}><FcCheckmark/>{primeiro.info3}</Text>
+          <Text display={'flex'}><FcCheckmark/>{primeiro.info4}</Text>
+          <Text display={'flex'}><FcCheckmark/>{primeiro.info5}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{primeiro.score}</Text>
@@ -225,6 +244,8 @@ export default function Home(){
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{segundo.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{segundo.info2}</Text>
           <Text display={'flex'}><FcCheckmark/>{segundo.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{segundo.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{segundo.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{segundo.score}</Text>
@@ -234,7 +255,7 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
+            <FaStarHalfAlt/>
           </Flex>
           <Link target="_blank" href={segundo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -260,6 +281,8 @@ export default function Home(){
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{terceiro.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{terceiro.info2}</Text>
           <Text display={'flex'}><FcCheckmark/>{terceiro.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{terceiro.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{terceiro.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{terceiro.score}</Text>
@@ -269,7 +292,7 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
+            <FaStarHalfAlt/>
           </Flex>
           <Link target="_blank" href={terceiro.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -295,6 +318,8 @@ export default function Home(){
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{quarto.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{quarto.info2}</Text>
           <Text display={'flex'}><FcCheckmark/>{quarto.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{quarto.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{quarto.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{quarto.score}</Text>
@@ -304,7 +329,7 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
+            <FaStarHalfAlt/>
           </Flex>
           <Link target="_blank" href={quarto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -329,7 +354,9 @@ export default function Home(){
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{quinto.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{quinto.info2}</Text>
-          <Text display={'flex'}><FcCheckmark/>{quinto.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{quinto.info3r}</Text>
+          <Text display={'flex'}><FcCancel/>{quinto.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{quinto.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{quinto.score}</Text>
@@ -339,7 +366,7 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
+            <FaRegStar/>
           </Flex>
           <Link target="_blank" href={quinto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -364,7 +391,9 @@ export default function Home(){
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{sexto.info1}</Text>
           <Text display={'flex'}><FcCheckmark/>{sexto.info2}</Text>
-          <Text display={'flex'}><FcCheckmark/>{sexto.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{sexto.info3r}</Text>
+          <Text display={'flex'}><FcCancel/>{sexto.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{sexto.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{sexto.score}</Text>
@@ -374,7 +403,7 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
+            <FaRegStar/>
           </Flex>
           <Link target="_blank" href={sexto.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -398,8 +427,10 @@ export default function Home(){
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{primeiro.info1}</Text>
-          <Text display={'flex'}><FcCheckmark/>{setimo.info2}</Text>
-          <Text display={'flex'}><FcCheckmark/>{setimo.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{setimo.info2r}</Text>
+          <Text display={'flex'}><FcCancel/>{setimo.info3r}</Text>
+          <Text display={'flex'}><FcCancel/>{setimo.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{setimo.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{setimo.score}</Text>
@@ -408,8 +439,8 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
-            <FaStar/>
+            <FaStarHalfAlt/>
+            <FaRegStar/>
           </Flex>
           <Link target="_blank" href={setimo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
@@ -433,8 +464,10 @@ export default function Home(){
           <Link fontWeight='600'>Trusted by 110K+ users worldwide<br/>
           <Link fontWeight='600'>**14-day free trial**</Link></Link>
           <Text mt='0.5vw' display={'flex'}><FcCheckmark/>{oitavo.info1}</Text>
-          <Text display={'flex'}><FcCheckmark/>{oitavo.info2}</Text>
-          <Text display={'flex'}><FcCheckmark/>{primeiro.info3}</Text>
+          <Text display={'flex'}><FcCancel/>{oitavo.info2r}</Text>
+          <Text display={'flex'}><FcCancel/>{oitavo.info3r}</Text>
+          <Text display={'flex'}><FcCancel/>{oitavo.info4r}</Text>
+          <Text display={'flex'}><FcCancel/>{oitavo.info5r}</Text>
         </Flex>
         <Flex flexDirection={'column'} border='1px' pr='0.5vw' pl='0.5vw' textAlign={'center'}>
           <Text fontWeight={'bold'} fontSize={['30px','30px', '40px']}>{oitavo.score}</Text>
@@ -443,8 +476,8 @@ export default function Home(){
             <FaStar/>
             <FaStar/>
             <FaStar/>
-            <FaStar/>
-            <FaStar/>
+            <FaStarHalfAlt/>
+            <FaRegStar/>
           </Flex>
           <Link target="_blank" href={oitavo.review} color='#05071c'><Text>Read Review »</Text></Link>
         </Flex>
